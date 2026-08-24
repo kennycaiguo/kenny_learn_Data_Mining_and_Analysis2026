@@ -24,7 +24,7 @@
 
 
 
-
+## 可以下载fasttext.exe或者使用fastTextpython库
 
 ### 1.用下面的命令下载这个库后安装失败
 
@@ -167,13 +167,13 @@ model.test("cooking.valid")
 
 ```python
 #  模型保存
-model.save_model("cocking_model.bin")
+model.save_model("D:/fastText_trained_model_and_datas/cocking_model.bin")
 ```
 
 
 ```python
 #加载模型
-model2 = fasttext.load_model("cocking_model.bin")
+model2 = fasttext.load_model("D:/fastText_trained_model_and_datas/cocking_model.bin")
 model2
 ```
 
@@ -195,12 +195,32 @@ model.predict(["Which baking dish is best to bake a banana bread ?"], k=-1, thre
     ([['__label__baking', '__label__bread', '__label__equipment']],
      [array([1.00001, 1.00001, 1.00001], dtype=float32)])
 
+### 注意，由于模型和一些数据太大，不能够上传到GitHub，我们把它保存在D:/fastText_trained_model_and_datas/中。
+
+
+
 ### 案例2.ftdemo2.ipynb
 
 ### 1.获取数据，点击这个链接即可下载：http://mattmahoney.net/dc/enwik9.zip
+
+### 案例2不好做，我们来学习一个kaggle的例子
+
+### https://www.kaggle.com/code/pawankumargunjan/fasttext/notebook
 
 
 
 # 扩展： 这个有一个网址，可以选择数据集
 
 ## https://huggingface.co/datasets/fancyzhx/ag_news
+
+# 扩展2：在上传文件到GitHub时，如果出现下面的报错：
+
+![image-20260823183503974](./note24-实践5：使用fastText进行新闻文本分类.assets/image-20260823183503974.png)
+
+## 就需要做下面的配置
+
+```
+git config --get http.postBuffer
+git config --global http.postBuffer 524288000
+```
+
