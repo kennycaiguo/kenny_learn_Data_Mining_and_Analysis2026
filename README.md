@@ -1,4 +1,4 @@
-# kenny_learn_AI_Data_Mining_and_Analysis
+# kenny_learn_Data_Mining_and_Analysis2026
 AI数据挖掘分析全套教程
 
 ## 有用资源
