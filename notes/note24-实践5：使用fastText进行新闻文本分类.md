@@ -203,7 +203,7 @@ model.predict(["Which baking dish is best to bake a banana bread ?"], k=-1, thre
 
 ### 1.获取数据，点击这个链接即可下载：http://mattmahoney.net/dc/enwik9.zip
 
-### 案例2不好做，我们来学习一个kaggle的例子
+### 案例2不好做，我们来学习一个kaggle的例子，这里也可以下载项目需要的数据
 
 ### https://www.kaggle.com/code/pawankumargunjan/fasttext/notebook
 
